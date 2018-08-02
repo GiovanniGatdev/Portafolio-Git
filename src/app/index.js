@@ -8,17 +8,21 @@ const ui = new UI();
 const userForm = document.getElementById('userForm');
 
 userForm.addEventListener('submit', (e) => {
+    e.preventDefault();
     const textSearch = document.getElementById('textSearch').value;
     if (textSearch !== '') {
         github.fetchUser(textSearch)
             .then(data => {
-                if (data.message === 'Not Found') {
+                if (data.userData.message === 'Not Found') {
                     ui.showMessage('El Usuario no existe!', 'alert alert-danger col-md-12 mt-2');
                 } else {
-                    ui.showProfile(data);
+                    ui.showProfile(data.userData);
+                    ui.showRepositories(data.repositories);
                 }
 
             })
+    } else {
+        ui.reset();
     }
-    e.preventDefault();
+
 });

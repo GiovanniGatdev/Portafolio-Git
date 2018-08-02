@@ -60,6 +60,7 @@ class UI {
         const content = document.querySelector('.row');
         const profile = document.querySelector('#perfil');
         content.insertBefore(div, profile);
+        setTimeout(() => this.limpiarpantalla(), 3000);
     }
 
     limpiarpantalla() {

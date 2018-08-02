@@ -12,8 +12,8 @@ userForm.addEventListener('submit', (e) => {
     if (textSearch !== '') {
         github.fetchUser(textSearch)
             .then(data => {
-                if (data.message == 'Not Found') {
-                    console.log('El usuario no existe');
+                if (data.message === 'Not Found') {
+                    console.log('Usuario no encontrado');
                 } else {
                     ui.showProfile(data);
                 }

@@ -13,7 +13,7 @@ userForm.addEventListener('submit', (e) => {
         github.fetchUser(textSearch)
             .then(data => {
                 if (data.message === 'Not Found') {
-                    console.log('Usuario no encontrado');
+                    ui.showMessage('El Usuario no existe!', 'alert alert-danger col-md-12 mt-2');
                 } else {
                     ui.showProfile(data);
                 }

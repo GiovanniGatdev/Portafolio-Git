@@ -21,12 +21,29 @@ class UI {
             Siguiendo: ${user.following}
         </span>
         <span class="badge badge-pill badge-dark d-block">
-            Blog: ${user.blog}
+            Repositorios Públicos: ${user.public_repos}
         </span>
         </div>
         </div>
         
         `;
+        this.limpiarpantalla();
+    }
+
+    showMessage(message, cssClass) {
+        const div = document.createElement('div');
+        div.className = cssClass;
+        div.appendChild(document.createTextNode(message));
+        const content = document.querySelector('.row');
+        const profile = document.querySelector('#perfil');
+        content.insertBefore(div, profile);
+    }
+
+    limpiarpantalla() {
+        const alertFound = document.querySelector('.alert');
+        if (alertFound) {
+            alertFound.remove();
+        }
     }
 }
 module.exports = UI;

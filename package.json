@@ -1,22 +1,30 @@
 {
-    "name": "Portafolio-Git",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "build": "webpack --mode production",
-        "dev": "webpack-dev-server --mode development"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "html-webpack-plugin": "^3.2.0",
-        "webpack": "^4.44.2",
-        "webpack-cli": "^3.3.12",
-        "webpack-dev-server": "^3.11.0"
-    },
-    "dependencies": {
-        "node-forge": "^0.10.0"
-    }
+  "name": "Portafolio-Git",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "node-forge": "^0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiovanniGatdev/Portafolio-Git.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GiovanniGatdev/Portafolio-Git/issues"
+  },
+  "homepage": "https://github.com/GiovanniGatdev/Portafolio-Git#readme",
+  "description": ""
 }

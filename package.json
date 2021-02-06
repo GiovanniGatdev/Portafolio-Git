@@ -16,7 +16,9 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "node-forge": "^0.10.0"
+    "lodash": "^4.17.20",
+    "node-forge": "^0.10.0",
+    "tree-kill": "^1.2.2"
   },
   "repository": {
     "type": "git",
